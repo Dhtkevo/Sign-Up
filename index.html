@@ -4,32 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="bg-img">
-      <div class="oden-container">
-        <img src="images/odin-lined.png" alt="Oden logo" />
-      </div>
+    <div class="left-bg"></div>
+    <div class="odin-logo-bg">
+      <img id="odin-logo" src="images/odin-lined.png" alt="odin-logo" />
+      <h2>ODIN</h2>
     </div>
-    <div class="right-side">
-      <div class="top-text">
-        <p class="description-text">
+    <div class="right-bg">
+      <div class="first-section">
+        <p class="first-p">
           This is not a real online service! You know you need something like
           this in your life to help you realize your deepest dreams. Sign up now
           to get started.
         </p>
-        <p class="description-text2">You know you want to.</p>
+        <p class="first-p">You know you want to.</p>
       </div>
-      <div class="form-container">
-        <form action="">
-          <p>Let's do this!</p>
+      <div class="second-section">
+        <form action="" id="sign-up-for">
+          <h3>Let's Do This!</h3>
+          <ul>
+            <li>
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" required />
+            </li>
+            <li>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email-address" required />
+            </li>
+            <li>
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required />
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" />
+            </li>
+            <li>
+              <label for="phone-number">Phone Number</label>
+              <input type="tel" id="phone-number" name="phone-number" />
+            </li>
+            <li>
+              <label for="password">Confirm Password</label>
+              <input type="password" id="password" name="password" required />
+            </li>
+          </ul>
         </form>
       </div>
-      <div class="submit-container">
-        <button>Create Account</button>
-        <p id="have-acc"></p>
+      <div class="third-section">
+        <button type="submit" form="sign-up-for">Create Account</button>
+        <p class="have-acc">
+          Already have an account?<span><a href="">Log in</a></span>
+        </p>
       </div>
     </div>
   </body>
